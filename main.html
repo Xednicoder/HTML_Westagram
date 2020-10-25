@@ -4,32 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/main.css">
-    <script src="https://kit.fontawesome.com/77aa64d835.js" crossorigin="anonymous"></script> <!-- 메뉴바 인스타 아이콘 서버 -->
-    <title>We are Amazing Weeds!!</title>
+    <link rel='stylesheet' href='./style/main.css'>
+    <link rel='shortcut icon' href='./favicon/icon.png'>
+    <script src='https://kit.fontawesome.com/77aa64d835.js' crossorigin="anonymous"></script> <!-- 메뉴바 인스타 아이콘 서버 -->
+    <title>Westagram: We are Amazing Weeds!!</title>
 </head>
 
 <body>
     <!-- 헤더 스타트 -->
-    <header>
+    <header class='container'>
         <nav>
             <!-- 메인 이미지 -->
-            <div>
-                <a href=""><img src="./img/logo_text.png" class="main-img"></a>
+            <div class='mainBox'><a href=''><img src='./img/logo_text.png' class='main-img'></a>
             </div>
             <!-- 서치바 -->
-            <div class="nav-serchbar">
-                <input class="nav-serchbar-text" type="text" autocapitalize="none" placeholder="검색" value="">
+            <div class='serchBar'>
+                <div class='serchBarImg'>
+                    <img src='./img/serch.png' id='serch'>
+                </div>
+                <input class='serchBarText' type='text' placeholder='검색'>
             </div>
-
             <!-- 메뉴 리스트 -->
-            </div>
             <ul>
                 <!-- 메뉴 : Home -->
                 <li>
 
-                    <a href="">
-                        <svg class="nav-li" fill="#262626" height="22" viewBox="0 0 48 48" width="22">
+                    <a href=''>
+                        <svg class='nav-li' fill='#262626' height='22' viewBox='0 0 48 48' width="22">
                             <path
                                 d="M45.5 48H30.1c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2.1-4.6-4.6-4.6s-4.6 2.1-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.6-.6 2.1 0l21.5 21.5c.3.3.4.7.4 1.1v23.5c.1.8-.6 1.5-1.4 1.5z">
                             </path>
@@ -84,9 +85,9 @@
     <main>
         <section>
             <!-- 좌측 메뉴들-->
-            <div class='feed-bar'>
-                <div class='instaStory container'>
-                    <div class='storyLi'>
+            <div class='rightBar'>
+                <div class='storyBox container'>
+                    <div class='storyLi' scroll='no'>
                         <img src="./img/circle.png" class='canvas'>
                         <img src='./data/friends/friend2.png' class='circle'>
                         <div class='storyName small-text'>moana</div>
@@ -99,55 +100,55 @@
                     <div class='storyLi'>
                         <img src="./img/circle.png" class='canvas'>
                         <img src='./data/friends/friend4.png' class='circle'>
-                        <div class='storyName small-text'>xedni</div>
+                        <div class='storyName small-text'>No Name</div>
                     </div>
                     <div class='storyLi'>
                         <img src="./img/circle.png" class='canvas'>
                         <img src='./data/friends/friend5.png' class='circle'>
-                        <div class='storyName small-text'>xedni</div>
+                        <div class='storyName small-text'>Mérida</div>
                     </div>
                     <div class='storyLi'>
                         <img src="./img/circle.png" class='canvas'>
                         <img src='./data/friends/friend6.png' class='circle'>
-                        <div class='storyName small-text'>xedni</div>
+                        <div class='storyName small-text'>Tinker Bell</div>
                     </div>
                     <div class='storyLi'>
                         <img src="./img/circle.png" class='canvas'>
                         <img src='./data/friends/friend7.png' class='circle'>
-                        <div class='storyName small-text'>xedni</div>
+                        <div class='storyName small-text'>Vanellope</div>
                     </div>
                     <div class='storyLi'>
                         <img src="./img/circle.png" class='canvas'>
                         <img src='./data/friends/friend8.png' class='circle'>
-                        <div class='storyName small-text'>xedni</div>
+                        <div class='storyName small-text'>Tangled2010</div>
                     </div>
                     <div class='storyLi'>
                         <img src="./img/circle.png" class='canvas'>
                         <img src='./data/friends/friend9.png' class='circle'>
-                        <div class='storyName small-text'>xedni</div>
+                        <div class='storyName small-text'>Extra man1</div>
                     </div>
                     <div class='storyLi'>
                         <img src="./img/circle.png" class='canvas'>
                         <img src='./data/friends/friend1.png' class='circle'>
-                        <div class='storyName small-text'>xedni</div>
+                        <div class='storyName small-text'>Extra1</div>
                     </div>
                     <div class='storyLi'>
                         <img src="./img/circle.png" class='canvas'>
                         <img src='./data/friends/friend10.png' class='circle'>
-                        <div class='storyName small-text'>xedni</div>
+                        <div class='storyName small-text'>Kristoff</div>
                     </div>
                 </div>
-                <div class='insta-feeds'>
-                    <article>피드1</article>
-                    <article>피드2</article>
-                    <article>피드3</article>
-                    <article>피드3</article>
+                <div class='feedBox container'>
+                    <article class='feeds'>피드1</article>
+                    <article class='feeds'>피드2</article>
+                    <article class='feeds'>피드3</article>
+                    <article class='feeds'>피드3</article>
 
                 </div>
             </div>
-            <div class='profile-bar'>
+            <div class='profileBar'>
                 <div class='profile'>
-                    xedni
+                    <span><img src=''></span>
                 </div>
                 <div class='recomend'>
                     회원님을 위한 추천 모두보기
