@@ -82,7 +82,6 @@
             </nav>
         </div>
     </header>
-
     <!-- 본문 스타트 -->
     <main>
         <section>
@@ -167,11 +166,18 @@
                         <!-- 작성자 정보 -->
                         <div class='feedTop'>
                             <a href="">
-                                <div>
+                                <div class='feedWriter'>
                                     <img src='./data/friends/friend3.png'>
                                 </div>
                             </a>
                             <a href=''><span class="large-text">Elsa Bryant</span></a>
+                            <div class="feedSetting">
+                                <svg fill="#262626" height="16" viewBox="0 0 48 48" width="16">
+                                    <circle clip-rule="evenodd" cx="8" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                                    <circle clip-rule="evenodd" cx="24" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                                    <circle clip-rule="evenodd" cx="40" cy="24" fill-rule="evenodd" r="4.5"></circle>
+                                </svg>
+                            </div>
                         </div>
                         <div class='feedImg'>
                             <img src='./data/feeds/article3.jpeg'>
@@ -247,7 +253,7 @@
                                         <a href=""><span class="visitor1 large-text">Venellope</span></a>
                                         <span class="visitorCom body-text">Go away, Anna!!</span>
                                     </div>
-                                    <div class="commit2">
+                                    <div class="commit1">
                                         <a href=''><span class="visitor1 large-text">Moana</span></a>
                                         <span class="visitorCom body-text">Elsa, please I know you're in there</span>
                                     </div>
@@ -260,17 +266,16 @@
                         </div>
                         <!-- 댓글 작성란 -->
                         <div class="writeCommitBox">
-                            <input class='body-text' type='text' placeholder='댓글 달기...'>
+                            <input class='body-text' id='commitText' type='text' placeholder='댓글 달기...' value=''>
+                            <button type="button" id='commitEnter'>게시</button>
                         </div>
-
-
-
                     </article>
+
                     <article class='feeds container'>
                         <!-- 작성자 정보 -->
                         <div class='feedTop'>
                             <a href="">
-                                <div>
+                                <div class='feedWriter'>
                                     <img src='./data/friends/friend6.png'>
                                 </div>
                             </a>
@@ -351,7 +356,7 @@
                                         <a href=""><span class="visitor1 large-text">No_Name</span></a>
                                         <span class="visitorCom body-text">Hello World!!!!</span>
                                     </div>
-                                    <div class="commit2">
+                                    <div class="commit1">
                                         <a href=''><span class="visitor1 large-text">Kain_2019</span></a>
                                         <span class="visitorCom body-text">That's nice word, you are so cool.
                                         </span>
@@ -365,17 +370,16 @@
                         </div>
                         <!-- 댓글 작성란 -->
                         <div class="writeCommitBox">
-                            <input class='body-text' type='text' placeholder='댓글 달기...'>
+                            <input class='body-text' id='commitText2' type='text' placeholder='댓글 달기...'>
+                            <button type="button" id='commitEnter2'>게시</button>
                         </div>
                     </article>
-
-
 
                     <article class='feeds container'>
                         <!-- 작성자 정보 -->
                         <div class='feedTop'>
                             <a href="">
-                                <div>
+                                <div class='feedWriter'>
                                     <img src='./data/friends/friend5.png'>
                                 </div>
                             </a>
@@ -455,7 +459,7 @@
                                         <span class="visitorCom body-text">Please leave a comment.
                                         </span>
                                     </div>
-                                    <div class="commit2">
+                                    <div class="commit1">
                                         <a href=''><span class="visitor1 large-text">Mérida</span></a>
                                         <span class="visitorCom body-text">There's not a single comment, really????
                                         </span>
@@ -469,7 +473,8 @@
                         </div>
                         <!-- 댓글 작성란 -->
                         <div class="writeCommitBox">
-                            <input class='body-text' type='text' placeholder='댓글 달기...'>
+                            <input class='body-text' id='commitText3' type='text' placeholder='댓글 달기...'>
+                            <button type="button" id='commitEnter3'>게시</button>
                         </div>
                     </article>
                 </div>
@@ -501,6 +506,11 @@
                             <div class="large-text">Stitches</div>
                             <div class="gray-text12">회원님을 팔로우합니다.</div>
                         </div>
+                        <div class="follow">
+                            <a href=''>
+                                <div class='link-text small-text'>팔로우</div>
+                            </a>
+                        </div>
                     </div>
                     <div class='recomBox'>
                         <div class='recomFiBox'>
@@ -511,6 +521,11 @@
                         <div class='recomFiNameBox'>
                             <div class="large-text">Cendrillon</div>
                             <div class="gray-text12">회원님을 팔로우합니다.</div>
+                        </div>
+                        <div class="follow">
+                            <a href=''>
+                                <div class='link-text small-text'>팔로우</div>
+                            </a>
                         </div>
                     </div>
                     <div class='recomBox'>
@@ -523,6 +538,11 @@
                             <div class="large-text">Mulan</div>
                             <div class="gray-text12">회원님을 위한 추천</div>
                         </div>
+                        <div class="follow">
+                            <a href=''>
+                                <div class='link-text small-text'>팔로우</div>
+                            </a>
+                        </div>
                     </div>
                     <div class='recomBox'>
                         <div class='recomFiBox'>
@@ -534,6 +554,11 @@
                             <div class="large-text">Ariel</div>
                             <div class="gray-text12">회원님을 팔로우합니다.</div>
                         </div>
+                        <div class="follow">
+                            <a href=''>
+                                <div class='link-text small-text'>팔로우</div>
+                            </a>
+                        </div>
                     </div>
                     <div class='recomBoxLast'>
                         <div class='recomFiBox'>
@@ -544,6 +569,11 @@
                         <div class='recomFiNameBox'>
                             <div class="large-text">Tmon_Pumba</div>
                             <div class="gray-text12">회원님을 위한 추천</div>
+                        </div>
+                        <div class="follow">
+                            <a href=''>
+                                <div class='link-text small-text'>팔로우</div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -571,6 +601,7 @@
             </div>
         </section>
     </main>
+    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 
 </html>

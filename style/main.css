@@ -5,6 +5,7 @@ body {
 }
 
 button {
+  color: #0094f8;
   background: inherit;
   border: none;
   box-shadow: none;
@@ -12,6 +13,10 @@ button {
   padding: 0;
   overflow: visible;
   cursor: pointer;
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 button:focus {
@@ -90,6 +95,7 @@ section {
     sans-serif;
   font-size: 12px;
   text-overflow: ellipsis;
+  line-height: 14px;
 }
 
 .large-text {
@@ -139,7 +145,10 @@ section {
   word-spacing: 0px;
   color: #c7c7c7;
 }
-
+.link-text {
+  color: #0095f6;
+  font-weight: 600;
+}
 .fontWeight500 {
   font-weight: 500;
 }
@@ -276,20 +285,21 @@ section {
   display: flex;
   justify-content: left;
   align-items: center;
+  position: relative;
   width: 614px;
   height: 60px;
   border-bottom: 1px solid #dbdbdb;
   box-sizing: border-box;
   z-index: 2;
 }
-.feedTop div {
+.feedWriter {
   display: flex;
   position: relative;
   left: 14px;
   width: 32px;
   height: 32px;
 }
-.feedTop img {
+.feedWriter img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -299,7 +309,12 @@ section {
   position: relative;
   left: 28px;
 }
-
+.feedSetting {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 580px;
+}
 .feedImg {
   max-height: 760px;
   overflow: hidden;
@@ -367,11 +382,14 @@ section {
 }
 
 .writeCommitBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   height: 56px;
 }
 .writeCommitBox input {
   border: 0px solid red;
-  height: 56px;
+  width: 572px;
   box-sizing: border-box;
   padding: 14px;
 }
@@ -454,7 +472,12 @@ section {
   border-radius: 50%;
 }
 .recomFiNameBox {
+  width: 213px;
   margin-left: 6px;
+}
+.follow {
+  display: flex;
+  align-items: center;
 }
 footer {
   display: flex;
@@ -489,4 +512,11 @@ footer {
 #serch {
   width: 10px;
   height: 10px;
+}
+.deleteButton {
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  color: #8e8e8e;
 }
