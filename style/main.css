@@ -17,12 +17,10 @@ button {
 button:focus {
   outline-width: 0;
 }
-a,
-a:visited,
-a:hover,
-a:focus {
+
+a {
   text-decoration: none;
-  color: black;
+  color: #000;
 }
 
 header {
@@ -115,10 +113,35 @@ section {
   font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
     sans-serif;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 18px;
   word-spacing: 0px;
   color: #8e8e8e;
+}
+
+.gray-text12 {
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  word-spacing: 0px;
+  color: #8e8e8e;
+}
+
+.graySmall-Text {
+  font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
+    sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.11px;
+  word-spacing: 0px;
+  color: #c7c7c7;
+}
+
+.fontWeight500 {
+  font-weight: 500;
 }
 
 .container {
@@ -154,6 +177,10 @@ section {
 }
 .my-pic {
   width: 22px;
+  height: 22px;
+  border: 1px solid #dbdbdb;
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 
 .serchBar {
@@ -203,6 +230,7 @@ section {
   height: 118px;
   margin: 0 0 24px 0;
   padding: 0 0 0 17px;
+  padding-right: 17px;
 }
 .storyBox::-webkit-scrollbar {
   display: none;
@@ -356,20 +384,108 @@ section {
 }
 
 .profileBar {
-  position: fixed;
+  position: sticky;
   top: 88px;
   bottom: -118px;
   width: 298px;
-  right: 0;
-  left: 1014.5px;
+  margin: 4px 0 0 28px;
+}
+.profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.profileBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 66px;
+  height: 66px;
+  padding: 16px 0 16px 0;
+}
+.profileBox img {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #ececec;
+  border-radius: 50%;
+}
+.profileName {
+  margin-left: 12px;
 }
 
-.recomend {
-  width: 325;
-  height: 291;
-  border: 1px solid black;
+.recomTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
+.recommend {
+  margin: 12px 0 0 0;
+}
+.recomBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.recomBoxLast {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.recomFiBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recomFiPicCanvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+}
+.recomFiPic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #dbdbdb;
+  border-radius: 50%;
+}
+.recomFiNameBox {
+  margin-left: 6px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.infomation {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+.infomation ul {
+  padding: 0px;
+}
+.infomation ul li {
+  float: left;
+  padding-right: 3px;
+  list-style: none;
+}
+.infomation ul li a {
+  color: #c7c7c7;
+}
+.infomation ul li::after {
+  position: relative;
+  padding-left: 2px;
+  content: '\00b7';
+  color: #c7c7c7;
+}
+.copyRight {
+  margin-top: 5px;
+}
 #serch {
   width: 10px;
   height: 10px;
