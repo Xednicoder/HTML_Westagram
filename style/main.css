@@ -73,6 +73,7 @@ main {
 
 section {
   display: flex;
+  justify-content: center;
   padding: 84px 0 0 0;
   width: 935px;
   max-width: 975;
@@ -87,7 +88,6 @@ section {
   font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
     sans-serif;
   font-size: 10px;
-  text-overflow: ellipsis;
   color: #8e8e8e;
 }
 
@@ -95,7 +95,6 @@ section {
   font-family: -apple-system, system-ui, 'Segoe UI', Roboto, Helvetica, Arial,
     sans-serif;
   font-size: 12px;
-  text-overflow: ellipsis;
   line-height: 14px;
 }
 
@@ -205,6 +204,7 @@ section {
   border: 1px solid #dbdbdb;
   box-sizing: border-box;
 }
+
 .serchBarImg {
   display: flex;
   position: absolute;

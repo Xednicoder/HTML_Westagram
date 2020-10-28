@@ -3,7 +3,16 @@ const buttonComment = document.querySelectorAll('.buttonComment');
 const myName = document.querySelector('.profileName div');
 const currentBodyTag = document.querySelectorAll('.feedBodyContent .body-text');
 const locationFeedContent = document.querySelectorAll('.feedBodyContent');
-buttonComment.forEach((ele) => ele.addEventListener('click', addComment));
+const locationCommentBox = document.querySelectorAll('.commentBox');
+const locationViewComment = document.querySelectorAll(
+  '.viewComment .gray-text'
+);
+
+//실행기
+buttonComment.forEach((ele) => ele.addEventListener('click', addComment)); // 게시 버튼 클릭
+locationViewComment.forEach((ele) =>
+  ele.addEventListener('click', allComments)
+); // 댓글 모두 보기 버튼 클릭
 //댓글 추가 기능
 function addComment(e) {
   const locationComment = e.target;
@@ -67,6 +76,35 @@ function resetBodyText(e) {
     }
   }
 }
+// 댓글 갯수 보여주기
+for (let i = 0; i < locationCommentBox.length; i++) {
+  let locationCommenter = locationCommentBox[i].children;
+  document.querySelectorAll('.numberOfComment')[i].innerHTML =
+    locationCommenter.length;
+}
+// 댓글 2개 이상 숨기기
+for (let i = 0; i < locationCommentBox.length; i++) {
+  let locationCommenter = locationCommentBox[i].children;
+  if (locationCommenter.length > 2) {
+    for (let j = 2; j < locationCommenter.length; j++) {
+      locationCommenter[j].style.display = 'none';
+    }
+  }
+}
+// 댓글 모두 보기
+function allComments(e) {
+  let targetViewiewButton = e.target.parentNode.parentNode;
+  let targetComment = targetViewiewButton.children[2];
+  console.log((targetComment.children[2].style.display = 'block'));
+  for (let i = 2; i < targetComment.children.length; i++) {
+    targetComment.children[i].style.display = 'block';
+  }
+}
 
-let aa = document.querySelectorAll('.commentBox .commet');
-console.log(aa.length);
+const aa = document.querySelector('.serchBarText');
+aa.addEventListener('click', serchBarPopUp);
+function serchBarPopUp(e) {
+  let locationSerchBar = e.target;
+  let makeDiv2 = document.createElement('div');
+  makeDiv2.innerHTML;
+}
